@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF 2-Up Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>PDF 2-Up Stacker</h2>
+        <p>Combine two slides onto one vertical page.</p>
+        
+        <div class="upload-section">
+            <input type="file" id="pdfInput" accept="application/pdf" />
+            <label for="pdfInput" class="custom-file-upload">
+                Choose PDF
+            </label>
+            <span id="fileName">No file chosen</span>
+        </div>
+
+        <button id="processBtn" disabled>Convert & Download</button>
+        
+        <div id="status" class="status"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
